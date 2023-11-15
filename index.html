@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Exercícios Básicos</title>
+</head>
+
+<body>
+
+  <h3>1. Crie duas variáveis com o valor 10 e 100. Mostre o valor da soma, subtração, divisão e multiplicação em um
+    ALERT:</h3>
+  <button onclick="executarTarefa()">Executar Tarefa</button>
+
+  <h3>2. Crie um loop que mostre na tela o valor de 10 a 100:</h3>
+  <div id="resultadoLoop"></div>
+
+  <h3>3. Crie uma variável que recebe o valor fixo 5. Mostre a tabuada desse número:</h3>
+  <div id="tabuada"></div>
+
+  <h3>4. Adapte o exercício anterior para o valor não ser mais fixo. O valor deve ser recebido de um campo da tela:</h3>
+  <input type="number" id="numeroTabuada" placeholder="Digite um número">
+  <button onclick="exibirTabuada()">Exibir Tabuada</button>
+  <div id="tabuadaPersonalizada"></div>
+
+  <h3>5. Fazer um calculadora que receberá dois valores e a operação (+,-,*,/). Ao clicar no botão calcular o resultado
+    é demonstrado:</h3>
+  <input type="number" id="num1" placeholder="Digite o primeiro número">
+  <select id="operacao">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="num2" placeholder="Digite o segundo número">
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultadoCalculadora"></p>
+
+  <h3>6. Percorra o array [1,2,3,4,5,6,7,8,9,10] e exiba apenas os valores pares:</h3>
+  <div id="valoresPares"></div>
+
+  <h3>7. Custo do carro novo ao consumidor:</h3>
+  <div class="calculator-container">
+    <label for="custoFabrica">Custo de Fábrica:</label>
+    <input type="number" id="custoFabrica" placeholder="Informe o custo de fábrica">
+
+    <label for="percDistribuidor">% Distribuidor:</label>
+    <input type="number" id="percDistribuidor" placeholder="Informe o percentual do distribuidor">
+
+    <label for="percImpostos">% Impostos:</label>
+    <input type="number" id="percImpostos" placeholder="Informe o percentual de impostos">
+
+    <button onclick="calcularCustoFinal()">Calcular</button>
+
+    <label for="valorfinal">Valor Final:</label>
+    <input type="text" id="valorfinal" readonly>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
